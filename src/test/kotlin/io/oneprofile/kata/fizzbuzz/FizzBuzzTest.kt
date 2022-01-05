@@ -20,6 +20,10 @@ class FizzBuzzTest {
 
     class FizzBuzz {
         fun compute(input: String): String {
+            if (input.contains("3")) {
+                return "Fizz"
+            }
+
             return ""
         }
     }
