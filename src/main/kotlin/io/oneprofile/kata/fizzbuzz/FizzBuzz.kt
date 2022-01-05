@@ -1,5 +1,7 @@
 package io.oneprofile.kata.fizzbuzz
 
+import com.sun.jdi.IntegerValue
+
 class FizzBuzz {
     fun compute(input: String): String {
         return computingContainRule(input)
@@ -16,6 +18,10 @@ class FizzBuzz {
     }
 
     fun computingDivisionRule(input: String): String {
+        val value = Integer.valueOf(input)
+        if(value == 3) {
+            return "Fizz"
+        }
 
         return input
     }

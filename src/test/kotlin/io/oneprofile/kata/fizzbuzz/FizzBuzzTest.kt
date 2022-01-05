@@ -40,6 +40,6 @@ class FizzBuzzTest {
         val result = FizzBuzz().computingDivisionRule(input)
 
         // ASSERT
-        Assertions.assertThat(result).isEqualTo("FizzFizz")
+        Assertions.assertThat(result).isEqualTo("Fizz")
     }
 }
