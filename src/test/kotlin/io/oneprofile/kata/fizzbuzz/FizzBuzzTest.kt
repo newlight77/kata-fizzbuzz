@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 class FizzBuzzTest {
 
     @Test
-    fun `should display Fizz with input contains a 3`() {
+    fun `should display Fizz with input containing 3`() {
         // GIVEN
         val input = "3"
 
@@ -18,13 +18,16 @@ class FizzBuzzTest {
 
     }
 
-    class FizzBuzz {
-        fun compute(input: String): String {
-            if (input.contains("3")) {
-                return "Fizz"
-            }
+    @Test
+    fun `should display Buzz with input containing 5`() {
+        // GIVEN
+        val input = "5"
 
-            return ""
-        }
+        // ACT
+        val result = FizzBuzz().compute(input)
+
+        // ASSERT
+        Assertions.assertThat(result).isEqualTo("Buzz")
+
     }
 }
