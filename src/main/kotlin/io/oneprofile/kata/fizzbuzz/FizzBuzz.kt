@@ -5,7 +5,7 @@ class FizzBuzz {
         return computingContainRule(input)
     }
 
-    private fun computingContainRule(input: String): String {
+    fun computingContainRule(input: String): String {
         if (input.contains("3")) {
             return "Fizz"
         }

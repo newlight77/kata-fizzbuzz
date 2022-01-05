@@ -11,7 +11,7 @@ class FizzBuzzTest {
         val input = "3"
 
         // Act
-        val result = FizzBuzz().compute(input)
+        val result = FizzBuzz().computingContainRule(input)
 
         // ASSERT
         Assertions.assertThat(result).isEqualTo("Fizz")
@@ -24,10 +24,11 @@ class FizzBuzzTest {
         val input = "5"
 
         // ACT
-        val result = FizzBuzz().compute(input)
+        val result = FizzBuzz().computingContainRule(input)
 
         // ASSERT
         Assertions.assertThat(result).isEqualTo("Buzz")
 
     }
+
 }
