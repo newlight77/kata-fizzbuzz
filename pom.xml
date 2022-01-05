@@ -14,7 +14,7 @@
 	<name>fizzbuzz</name>
 	<description>Kata on Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>13</java.version>
 		<kotlin.version>1.6.10</kotlin.version>
 	</properties>
 	<dependencies>
