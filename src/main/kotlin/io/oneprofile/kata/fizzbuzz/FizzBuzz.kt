@@ -14,4 +14,9 @@ class FizzBuzz {
         }
         return input
     }
+
+    fun computingDivisionRule(input: String): String {
+
+        return input
+    }
 }

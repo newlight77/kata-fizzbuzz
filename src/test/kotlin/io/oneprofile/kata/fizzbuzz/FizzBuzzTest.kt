@@ -31,4 +31,15 @@ class FizzBuzzTest {
 
     }
 
+    @Test
+    fun `should display Fizz when input is divisible by 3`() {
+        // GIVEN
+        val input = "3"
+
+        // Act
+        val result = FizzBuzz().computingDivisionRule(input)
+
+        // ASSERT
+        Assertions.assertThat(result).isEqualTo("FizzFizz")
+    }
 }
