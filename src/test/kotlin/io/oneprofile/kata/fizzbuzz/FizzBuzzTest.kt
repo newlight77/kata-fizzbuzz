@@ -42,4 +42,16 @@ class FizzBuzzTest {
         // ASSERT
         Assertions.assertThat(result).isEqualTo("Fizz")
     }
+
+    @Test
+    fun `should display Fizz when input is divisible by 5`() {
+        // GIVEN
+        val input = "5"
+
+        // Act
+        val result = FizzBuzz().computingDivisionRule(input)
+
+        // ASSERT
+        Assertions.assertThat(result).isEqualTo("Buzz")
+    }
 }
