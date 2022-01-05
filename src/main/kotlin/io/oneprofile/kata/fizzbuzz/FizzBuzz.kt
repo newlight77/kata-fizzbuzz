@@ -6,6 +6,10 @@ class FizzBuzz {
             return "Fizz"
         }
 
+        if (input.contains("5")) {
+            return "Buzz"
+        }
+
         return ""
     }
 }
